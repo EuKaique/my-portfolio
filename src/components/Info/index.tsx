@@ -2,10 +2,7 @@ import { AvatarContainer, InfoContainer, MessagingContainer, TitleContainer } fr
 import Photo from '../../assets/images/photo.png';
 import { FaLightbulb, FaRegLightbulb } from "react-icons/fa"
 import { useTheme } from "../../store/useTheme";
-
-type LightProps = {
-    themeColor: boolean
-}
+import { LightProps } from "../../@types/types";
 
 export function Info({themeColor}: LightProps){
     const light = useTheme()
@@ -24,8 +21,7 @@ export function Info({themeColor}: LightProps){
                 <h3>Front-end Developer</h3>
             </TitleContainer>
             <MessagingContainer themeColor={themeColor}>
-                <p><span>"</span>Se existe uma forma de fazer melhor,<span>"</span></p> 
-                <p className="last-p-class">descubra-a.</p>
+                <p><span>"</span>Se existe uma forma de fazer melhor, descubra-a.<span>"</span></p> 
                 <small>Thomas Edison</small>
             </MessagingContainer>
         </InfoContainer>

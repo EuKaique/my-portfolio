@@ -3,7 +3,7 @@ import tw from "twin.macro";
 
 export const InfoContainer = styled.div`
     ${tw`
-        py-8
+        pt-8
         px-4
     `}
 `
@@ -12,7 +12,7 @@ export const AvatarContainer = styled.div`
         flex
         justify-between
         items-center
-        gap-36
+        gap-16
     `}
     img{
         border-radius: 50%;
@@ -33,7 +33,7 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
     font-family: 'Poppins', sans-serif;
     h2{
         color: ${(props) => (props.themeColor ? "#232339" : "#FFFFFF")};
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 500;
     }
     h3{
@@ -41,7 +41,7 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 600;
     }
 `
@@ -52,23 +52,26 @@ export const MessagingContainer = styled.div<{themeColor: boolean}>`
         flex-col
         mb-4
         leading-6
+        border-b
+        border-slate-400
     `}
     p{
         display: flex;
         font-family: "Manjari", sans-serif;
         color: ${(props) => (props.themeColor ? "#232339" : "#FFFFFF")};
+        font-size: 1rem;
     }
     span{
         color: #79819A;
         font-size: 2rem;
-        padding: 0 0.2rem;
     }
     .last-p-class{
         margin-left: 1.1rem;
     }
     small{
-        margin-left: 1.1rem;
+        margin-left: 0.7rem;
         font-style: italic;
         color: #79819A;
+        margin-bottom: 1rem;
     }
 `

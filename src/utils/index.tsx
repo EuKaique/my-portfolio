@@ -1,6 +1,18 @@
 import LogoDuoSystem from '../assets/images/logo-duosystem.jpeg'
 import LogoTesis from '../assets/images/logo-tesis.jpeg'
 import LogoCompany from '../assets/images/logo-company.jpg'
+//Projects
+import ImageNetflix from '../assets/images/netflix-image.png'
+import ImageMultistep from '../assets/images/multistep-image.png'
+import ImageEcommerce from '../assets/images/ecommerce-image.png'
+import ImageGithub from '../assets/images/github-image.png'
+import ImageWhitecollar from '../assets/images/whitecollar-image.png'
+import ImageAgency from '../assets/images/agency-image.png'
+import ImageCalc from '../assets/images/calculadora-image.png'
+//Education
+import ImageCourseVideo from '../assets/images/curso_em_video-image.jpeg'
+import ImageUdemy from '../assets/images/udemy-image.png'
+import ImageUnip from '../assets/images/unip-image.jpg'
 
 export const Urls = [
     {github: "https://github.com/EuKaique"},
@@ -53,4 +65,101 @@ export const Experiences = [
                       Criação de relatórios, planilhas excel, 
                       conferência de contratos da empresa e lançamento no sistema da empresa.`
     },
+]
+
+export const Projects = [
+    {
+        id: 1,
+        image: ImageNetflix,
+        title: "Netflix clone",
+        description: "Desenvolvimento da interface Netflix, usando React.js e Typescript",
+        link: "https://netflix-clone-yd6r.vercel.app/"
+    },
+    {
+        id: 2,
+        image: ImageMultistep,
+        title: "Formulário Multi step",
+        description: "Criação de um formulário, usando React.js e Typescript",
+        link: "https://multiform-pi.vercel.app/"
+    },
+    {
+        id: 3,
+        image: ImageEcommerce,
+        title: "Mercado rápido - Ecommerce",
+        description: "Criação de um template, usando Html, Css e Javascript",
+        link: "https://eukaique.github.io/Ecommerce/"
+    },
+    {
+        id: 4,
+        image: ImageGithub,
+        title: "Localiza Github",
+        description: "Desenvolvimento de um sistema que localiza githubs, usando React.js",
+        link: "https://localizador-github-github-finder-qxci5srbf-eukaique.vercel.app/"
+    },
+    {
+        id: 5,
+        image: ImageWhitecollar,
+        title: "Whitecollar",
+        description: "Desenvolvimento de um website, usando Next.js e Typescript",
+        link: "https://consulting-webflow.vercel.app/"
+    },
+    {
+        id: 6,
+        image: ImageAgency,
+        title: "Agência de serviços",
+        description: "Criação de uma landing page, usando Html, Css e Javascript",
+        link: "https://eukaique.github.io/Agencia-servicos/"
+    },
+    {
+        id: 7,
+        image: ImageCalc,
+        title: "Calculadora",
+        description: "Criação de uma calculadora, usando Html, Css e Javascript",
+        link: "https://eukaique.github.io/Calculadora-Cientifica/"
+    }
+]
+
+export const Educations = [
+    {
+        id: 1,
+        image: ImageUnip,
+        title: "Universidade paulista",
+        course: "Ciência da computação",
+        date: "Dez - 2017"
+    },
+    {
+        id: 2,
+        image: ImageCourseVideo,
+        title: "Curso em vídeo",
+        course: "Html5",
+        date: "Dez - 2019"
+    },
+    {
+        id: 3,
+        image: ImageCourseVideo,
+        title: "Curso em vídeo",
+        course: "MySQL",
+        date: "Fev - 2020"
+    },
+    {
+        id: 4,
+        image: ImageUdemy,
+        title: "Udemy",
+        course: "PHP 7 completo",
+        date: "Abr - 2022"
+    },
+    {
+        id: 5,
+        image: ImageUdemy,
+        title: "Udemy",
+        course: "Laravel e Vue.js",
+        date: "Jul - 2022"
+    },
+    {
+        id: 6,
+        image: ImageUdemy,
+        title: "Udemy",
+        course: "React.js e Next.js",
+        date: "Mai - 2023"
+    }
 ]

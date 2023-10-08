@@ -17,7 +17,7 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
         gap-8
         pb-8
     `}
-    margin-left: -4.8%;
+    margin-left: -4.6%;
 
     div:first-child{
         ${tw`bg-slate-700`};

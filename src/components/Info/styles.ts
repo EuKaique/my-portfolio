@@ -12,13 +12,28 @@ export const AvatarContainer = styled.div`
         flex
         justify-between
         items-center
-        gap-16
+        md:gap-16
+        gap-2
     `}
     img{
         border-radius: 50%;
         width: 9rem;
         height: 8.5rem;
         filter: grayscale(80%);
+    }
+    @media (min-width: 360px) and (max-width: 576px){
+        padding-left: 34%;
+
+        button{
+            margin-right: 37%;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 820px){
+        padding-left: 40%;
+
+        button{
+            margin-right: 37%;
+        }
     }
 `
 
@@ -44,6 +59,9 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
         font-size: 1rem;
         font-weight: 600;
     }
+    @media (max-width: 768px){
+        text-align: center;
+    }
 `
 
 export const MessagingContainer = styled.div<{themeColor: boolean}>`
@@ -60,6 +78,11 @@ export const MessagingContainer = styled.div<{themeColor: boolean}>`
         font-family: "Manjari", sans-serif;
         color: ${(props) => (props.themeColor ? "#232339" : "#FFFFFF")};
         font-size: 1rem;
+        @media (max-width: 768px){
+            text-align: center;
+            width: 53%;
+            margin: 0 auto;
+        }
     }
     span{
         color: #79819A;
@@ -73,5 +96,8 @@ export const MessagingContainer = styled.div<{themeColor: boolean}>`
         font-style: italic;
         color: #79819A;
         margin-bottom: 1rem;
+    }
+    @media (max-width: 768px){
+        text-align: center;
     }
 `

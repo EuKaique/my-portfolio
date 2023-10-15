@@ -16,10 +16,32 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
     ${tw`
         flex
         items-center
+        justify-center
         gap-8
         pb-8
+        md:justify-start
+        md:pl-1
     `}
     margin-left: -10.8%;
+
+    @media (max-width: 1024px){
+        margin-left: -13.2%;
+    }
+    @media (min-width: 1280px) and (max-width: 1365px){
+        margin-left: -11.2%;
+    }
+    @media (min-width: 1440px){
+        margin-left: -10.4%;
+    }
+    @media (min-width: 1600px){
+        margin-left: -9.8%;
+    }
+    @media (min-width: 1920px){
+        margin-left: -9%;
+    }
+    @media (min-width: 2560px){
+        margin-left: -8.1%;
+    }
 
     div:first-child{
         ${tw`bg-slate-700`};
@@ -46,6 +68,10 @@ export const RowOne = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin-bottom: 1rem;
+
+    @media (max-width: 768px){
+        display: block;
+    }
 `
 
 export const Card = styled.div<{ themeColor: boolean }>`
@@ -76,6 +102,14 @@ export const RowTwo = styled.div<{themeColor: boolean}>`
   :last-child{
     width: 50%;
   }
+    @media (max-width: 768px){
+        display: flex;
+        align-items: center;
+
+        :last-child{
+            padding-top: 1.5rem;
+        }
+    }
 `
 
 export const RowThree = styled.div<{themeColor: boolean}>`
@@ -88,7 +122,6 @@ export const RowThree = styled.div<{themeColor: boolean}>`
         display: flex;
         align-items: center;
         list-style: none;
-        /* gap: 3rem; */
 
         li{
             border-right: 1px solid #79819A;
@@ -98,5 +131,9 @@ export const RowThree = styled.div<{themeColor: boolean}>`
         :last-child{
             border-right: none;
         }
+    }
+
+    @media (max-width: 768px){
+        display: block;
     }
 `

@@ -3,6 +3,8 @@ import { Experiences } from "../../utils";
 import { CompanyContainer, Content, Description, Details, ExperienceContainer, ExperienceContent, InfoContainer, LineVertical, LogoContainer, PeriodContainer, TitleContainer } from "./styles";
 
 export function Experience({themeColor}: LightProps){
+    const screen = window.innerWidth
+    
     return(
         <ExperienceContainer>
             <TitleContainer themeColor={themeColor}>
@@ -37,7 +39,9 @@ export function Experience({themeColor}: LightProps){
                                     </InfoContainer>
                                 </CompanyContainer>
                             </Details>
-                            <Description themeColor={themeColor}>{e.description}</Description>
+                            {screen >= 768 && (
+                                <Description themeColor={themeColor}>{e.description}</Description>
+                            )}
                         </Content>
                     ))
                 }

@@ -8,7 +8,7 @@ export const HomeContainer = styled.main<{ themeColor: boolean }>`
         min-h-screen
         text-white
         text-base
-        flex
+        md:flex
         px-2
     `}
 `;

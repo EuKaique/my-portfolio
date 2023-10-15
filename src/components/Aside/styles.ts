@@ -5,7 +5,7 @@ export const AsideContainer = styled.aside`
     ${tw`
         flex
         flex-col
-        border-r
-        border-slate-600
+        md:border-r
+        md:border-slate-600
     `}
 `

@@ -14,10 +14,33 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
     ${tw`
         flex
         items-center
+        justify-center
         gap-8
         pb-8
+        md:justify-start
+        md:pl-1
     `}
+
     margin-left: -4.6%;
+
+    @media (max-width: 1024px){
+        margin-left: -6.6%;
+    }
+    @media (min-width: 1280px) and (max-width: 1365px){
+        margin-left: -4.9%;
+    }
+    @media (min-width: 1440px){
+        margin-left: -4.2%;
+    }
+    @media (min-width: 1600px){
+        margin-left: -3.7%;
+    }
+    @media (min-width: 1920px){
+        margin-left: -3%;
+    }
+    @media (min-width: 2560px){
+        margin-left: -2.2%;
+    }
 
     div:first-child{
         ${tw`bg-slate-700`};
@@ -49,6 +72,8 @@ export const ExperienceContent = styled.div`
 export const Content = styled.div`
     ${tw`
         flex
+        flex-col
+        md:flex-row
         h-32
     `}
 `
@@ -56,8 +81,12 @@ export const Content = styled.div`
 export const Details = styled.div`
     ${tw`
         flex
-        flex-col
-        w-6/12
+        items-center
+        md:items-start
+        md:w-5/12
+        md:flex-col
+        lg:w-6/12
+        xl:w-8/12
     `}
 `
 
@@ -72,24 +101,35 @@ export const PeriodContainer = styled.div<{themeColor: boolean}>`
     font-size: 0.8rem;
     ${tw`
         flex
+        items-center
+        justify-center
+        gap-4
+        md:justify-start
     `}
     div:first-child{
         border-radius: 50%;
         display: flex;
-        margin-top: -0.2rem;
-        margin-left: -0.25rem;
+        align-items: center;
         padding: 0.25rem;
         max-height: 0.7rem;
+
+        @media (min-width: 768px){
+            margin-left: -0.25rem;
+            margin-top: -0.5rem;
+        }
         
         div{
             background-color: #CCC;
-            border-radius: 50%;
         }
     }
     p{
-        margin-top: -0.6rem;
-        margin-left: 1.2rem;
         color: ${(props) => (props.themeColor ? "#232339" : "#BBBBBB")};
+        @media (min-width: 768px){
+            margin-top: -1rem;
+        }
+    }
+    @media (max-width: 768px){
+        margin-top: 1.25rem;
     }
 `
 
@@ -97,6 +137,7 @@ export const CompanyContainer = styled.div<{themeColor: boolean}>`
     ${tw`
         flex
         items-center
+        justify-center
         gap-4
         ml-6
         mt-6

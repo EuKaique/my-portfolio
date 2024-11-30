@@ -1,13 +1,15 @@
 import { styled } from "styled-components";
 import tw from "twin.macro";
 
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.section`
     ${tw`
         pt-12
         pl-8
         flex
         flex-col
     `}
+    max-width: 1280px;
+    margin: 0 auto;
 `
 
 export const TitleContainer = styled.div<{themeColor: boolean}>`
@@ -29,7 +31,7 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
         margin-left: -4.9%;
     }
     @media (min-width: 1440px){
-        margin-left: -4.2%;
+        margin-left: -5.8%;
     }
     @media (min-width: 1600px){
         margin-left: -3.7%;
@@ -38,7 +40,7 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
         margin-left: -3%;
     }
     @media (min-width: 2560px){
-        margin-left: -2.2%;
+        margin-left: -3.2%;
     }
 
     div:first-child{

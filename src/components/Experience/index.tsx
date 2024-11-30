@@ -1,5 +1,5 @@
 import { LightProps } from "../../@types/types";
-import { Experiences } from "../../utils";
+import { Experiences } from "../../mocks";
 import { CompanyContainer, Content, Description, Details, ExperienceContainer, ExperienceContent, InfoContainer, LineVertical, LogoContainer, PeriodContainer, TitleContainer } from "./styles";
 
 export function Experience({themeColor}: LightProps){
@@ -12,7 +12,7 @@ export function Experience({themeColor}: LightProps){
                     <div></div>
                 </div>
                 <div>
-                    <h1>Experiência</h1>
+                    <h1>Experiência de trabalho</h1>
                 </div>
             </TitleContainer>
             <ExperienceContent>

@@ -6,4 +6,5 @@ export const MenuContainer = styled.menu`
         flex
         flex-col
     `}
+    width: 100%;
 `

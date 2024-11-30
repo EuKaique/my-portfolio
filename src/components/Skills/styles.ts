@@ -1,15 +1,20 @@
 import { styled } from "styled-components";
 import tw from "twin.macro";
 
-export const SkillsContainer = styled.div`
+export const SkillsContainer = styled.section`
     ${tw`
         pt-12
         pl-8
         flex
         flex-col
     `}
-    width: 90%;
+    min-width: 90%;
     margin: 0 auto;
+
+    @media (min-width: 2550px){
+        min-width: 50.5%;
+        max-width: 1280px;
+    }
 `
 
 export const TitleContainer = styled.div<{themeColor: boolean}>`
@@ -40,7 +45,7 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
         margin-left: -9%;
     }
     @media (min-width: 2560px){
-        margin-left: -8.1%;
+        margin-left: -6.1%;
     }
 
     div:first-child{

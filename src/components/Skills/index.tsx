@@ -9,7 +9,7 @@ export function Skills({themeColor}: LightProps){
                     <div></div>
                 </div>
                 <div>
-                    <h1>Habilidades</h1>
+                    <h1>Habilidades técnicas</h1>
                 </div>
             </TitleContainer>
             <RowOne>
@@ -37,8 +37,8 @@ export function Skills({themeColor}: LightProps){
                 <Card themeColor={themeColor}>
                     <ul>
                         <li>Git</li>
-                        <li>Databases</li>
-                        <li>Docker</li>
+                        <li>REST API</li>
+                        <li>Graph QL</li>
                     </ul>
                 </Card>
             </RowThree>

@@ -1,3 +1,4 @@
+import LogoVertem from '../assets/images/vertem.jpg'
 import LogoDuoSystem from '../assets/images/logo-duosystem.jpeg'
 import LogoTesis from '../assets/images/logo-tesis.jpeg'
 import LogoCompany from '../assets/images/logo-company.jpg'
@@ -23,22 +24,30 @@ export const Urls = [
 
 export const Experiences = [
     {
-        period: "Jul 22 - atualmente", 
-        logo: LogoDuoSystem, 
-        occupation: "Desenvolvedor", 
-        company: "Duo System", 
+        period: "Abr 2024 - Atualmente", 
+        logo: LogoVertem, 
+        occupation: "Desenvolvedor Pleno", 
+        company: "Vertem", 
         description: `Trabalho realizando melhorias e correções no sistema, 
-                      conforme necessidade do cliente. Atualmente junto com a equipe, 
-                      estamos realizando uma transformação de digital, 
-                      e nesse sistema sou um dos responsáveis pelo desenvolvimento Front-end, 
-                      utilizando o React.JS com TypeScript, Styled components, Zustand, GraphQL
+                      conforme necessidade do cliente. Sou o head front-end da squad, trabalho com React.JS,
+                      Typescript, Styled components, Zustand, REST API's, Module Federation, Webpack, e outras tecnologias.
+                      Utilizamos o Git como workflow e Azure DevOps`
+    },
+    {
+        period: "Jul 2022 - Fev 2024", 
+        logo: LogoDuoSystem, 
+        occupation: "Desenvolvedor Júnior", 
+        company: "Duo System", 
+        description: `Trabalhei realizando melhorias e correções no sistema, 
+                      conforme necessidade do cliente. Ajudei na realização uma transformação de digital, 
+                      utilizei o React.JS com TypeScript, Styled components, Zustand, GraphQL
                       em uma estrutura Micro front-end.
                       Utilizamos o Git como workflow e Azure DevOps`
     },
     {
-        period: "Ago 21 - Mar 22", 
+        period: "Ago 2021 - Mar 2022", 
         logo: LogoTesis, 
-        occupation: "Desenvolvedor", 
+        occupation: "Desenvolvedor Júnior", 
         company: "Tesis", 
         description: `Trabalhei realizando correções e melhorias no sistema, 
                       conforme necessidade do cliente. O sistema está estruturado em PHP com banco de dados MySQL, 
@@ -46,9 +55,9 @@ export const Experiences = [
                       Trabalhei também com a extração e exportação de dados com consultas(QUERY's) no banco`
     },
     {
-        period: "Abr 18 - Jun 18", 
+        period: "Abr 2018 - Jun 2018", 
         logo: LogoCompany, 
-        occupation: "Analista de sistemas júnior", 
+        occupation: "Analista de sistemas Júnior", 
         company: "SSI", 
         description: `Realizava a análise no banco de dados, 
                       fazendo algumas alterações em packages, procedures, sequences e functions,
@@ -57,7 +66,7 @@ export const Experiences = [
                       Nessa experiência trabalhei com Oracle PL/SQL, Java, Git e um pouco da metodologia SCRUM.`
     },
     {
-        period: "Jul 14 - Dez 14", 
+        period: "Jul 2014 - Dez 2014", 
         logo: LogoCompany, 
         occupation: "Auxiliar Administrativo", 
         company: "CIM", 

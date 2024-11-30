@@ -3,7 +3,7 @@ import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
 import { FaGithub } from 'react-icons/fa'
 import { MdLocationOn } from 'react-icons/md'
 import { LightProps } from "../../@types/types";
-import { Urls } from "../../utils";
+import { Urls } from "../../mocks";
 
 export function Contact({themeColor}: LightProps){
     const github = Urls[0].github

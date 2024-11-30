@@ -1,6 +1,10 @@
 import { AvatarContainer, InfoContainer, MessagingContainer, TitleContainer } from "./styles";
+
 import Photo from '../../assets/images/photo.png';
+import Curriculo from '../../assets/pdf/curriculo-kaique.pdf'
+
 import { FaLightbulb, FaRegLightbulb } from "react-icons/fa"
+
 import { useTheme } from "../../store/useTheme";
 import { LightProps } from "../../@types/types";
 
@@ -17,13 +21,11 @@ export function Info({themeColor}: LightProps){
                 </button>
             </AvatarContainer>
             <TitleContainer themeColor={themeColor}>
-                <h2>Kaique Oliveira Santos</h2>
-                <h3>Front-end Developer</h3>
+                <h2>Kaique</h2>
+                <h3>Desenvolvedor Front-end</h3>
+                <a className="btn-curriculo" href={Curriculo} target="_blank" rel="noreferrer">Currículo PDF</a>
             </TitleContainer>
-            <MessagingContainer themeColor={themeColor}>
-                <p><span>"</span>Se existe uma forma de fazer melhor, descubra-a.<span>"</span></p> 
-                <small>Thomas Edison</small>
-            </MessagingContainer>
+            <MessagingContainer themeColor={themeColor} />
         </InfoContainer>
     )
 }

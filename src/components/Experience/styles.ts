@@ -8,6 +8,8 @@ export const ExperienceContainer = styled.section`
         flex
         flex-col
     `}
+    max-width: 1280px;
+    margin: 0 auto;
 `
 
 export const TitleContainer = styled.div<{themeColor: boolean}>`
@@ -39,7 +41,7 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
         margin-left: -3%;
     }
     @media (min-width: 2560px){
-        margin-left: -2.2%;
+        margin-left: -0.2%;
     }
 
     div:first-child{

@@ -59,6 +59,16 @@ export const TitleContainer = styled.div<{themeColor: boolean}>`
         font-size: 1rem;
         font-weight: 600;
     }
+    .btn-curriculo{
+        background: #A478E8;
+        border-radius: 0.5rem;
+        text-align: center;
+
+        &:hover{
+            opacity: 0.7;
+            transition: 0.2s ease-in-out;
+        }
+    }
     @media (max-width: 768px){
         text-align: center;
     }

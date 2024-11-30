@@ -1,6 +1,6 @@
 import { LightProps } from "../../@types/types";
 import { ButtonContainer, Card, CardContainer, LinkContent, ProjectsContainer, TitleContainer } from "./styles";
-import { Projects as ProjectArray } from '../../utils/index'
+import { Projects as ProjectArray } from '../../mocks/index'
 import { LinkIcon } from "../../assets/icons/LinkIcon";
 import { useState } from "react";
 import { BiSolidDownArrow, BiSolidUpArrow } from 'react-icons/bi'
@@ -15,7 +15,7 @@ export function Projects({themeColor}: LightProps){
                     <div></div>
                 </div>
                 <div>
-                    <h1>Projetos</h1>
+                    <h1>Projetos pessoais</h1>
                 </div>
             </TitleContainer>
             <CardContainer>

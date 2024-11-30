@@ -80,6 +80,12 @@ export const ListItem = styled.li<{themeColor: boolean}>`
         font-weight: 400;
         color: ${(props) => (props.themeColor ? "#232339" : "#FFFFFF")};
 
+        &:hover{
+            color: #A478E8;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
         @media (max-width: 768px){
             display: none;
         }

@@ -1,5 +1,5 @@
 import { LightProps } from "../../@types/types";
-import { Educations } from "../../utils";
+import { Educations } from "../../mocks";
 import { Card, CardContainer, EducationContainer, TitleContainer } from "./styles";
 
 export function Education({themeColor}: LightProps){
@@ -10,7 +10,7 @@ export function Education({themeColor}: LightProps){
                     <div></div>
                 </div>
                 <div>
-                    <h1>Educação</h1>
+                    <h1>Cursos</h1>
                 </div>
             </TitleContainer>
             <CardContainer>

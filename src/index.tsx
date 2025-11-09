@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from './Home';
-import { GlobalStyles } from 'twin.macro';
+import { Page } from './page';
+import { GlobalTheme } from './theme';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <GlobalStyles />
-    <Home />
+    <GlobalTheme />
+    <Page />
   </React.StrictMode>
 );

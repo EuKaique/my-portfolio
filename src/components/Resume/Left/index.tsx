@@ -130,6 +130,17 @@ export const Left = () => {
           expectativas.
         </p>
       </S.Perfil>
+      <S.Project>
+        <h2 className="section-title" style={{ marginTop: "1.5rem" }}>
+          PROJETOS
+        </h2>
+        <button
+          className="btn-projects"
+          onClick={() => window.open("https://my-projects-psi-black.vercel.app", "_target", "noreferrer")}
+        >
+          Acessar meus projetos
+        </button>
+      </S.Project>
     </S.Container>
   );
 };

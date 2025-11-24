@@ -94,3 +94,13 @@ export const Perfil = styled.section`
     line-height: 1.6;
   }
 `;
+export const Project = styled.section`
+  .project__description {
+    text-align: left;
+  }
+  .btn-projects {
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+  }
+`;
